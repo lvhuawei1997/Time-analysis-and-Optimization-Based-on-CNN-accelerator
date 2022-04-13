@@ -1,0 +1,7 @@
+Network: /homework/lv/time_performance_optimization_for_CNN/net/all_json/alex.json
+conv1	[128, 54, 54, 64]  Filters: [11, 11, 3, 64]  Pad: VALID (0, 0) Stride: 4, 4 Params: 23,296 Input: [128, 224, 224, 3] input_nonzero:  1.0 filter_nonzero:  1.0
+conv2	[128, 26, 26, 192]  Filters: [5, 5, 64, 192]  Pad: SAME (2, 2) Stride: 1, 1 Params: 307,392 Input: [128, 26, 26, 64] input_nonzero:  1.0 filter_nonzero:  1.0
+conv3	[128, 12, 12, 384]  Filters: [3, 3, 192, 384]  Pad: SAME (1, 1) Stride: 1, 1 Params: 663,936 Input: [128, 12, 12, 192] input_nonzero:  1.0 filter_nonzero:  1.0
+conv4	[128, 12, 12, 384]  Filters: [3, 3, 384, 384]  Pad: SAME (1, 1) Stride: 1, 1 Params: 1,327,488 Input: [128, 12, 12, 384] input_nonzero:  1.0 filter_nonzero:  1.0
+conv5	[128, 12, 12, 256]  Filters: [3, 3, 384, 256]  Pad: SAME (1, 1) Stride: 1, 1 Params: 884,992 Input: [128, 12, 12, 384] input_nonzero:  1.0 filter_nonzero:  1.0
+

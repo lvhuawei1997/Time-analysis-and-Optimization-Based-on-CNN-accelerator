@@ -1,0 +1,358 @@
+0.035253099173553716
+0.07957682291666666
+0.08349910783179013
+0.11089522750289352
+0.09599982367621528
+0.23188278410169813
+0.15640074014663696
+0.147812744140625
+
+ACC:41.27
+ACC after prune:40.949999999999996
+
+AlexNet(
+  (conv1): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+  (conv2): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+  (conv3): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (fc6): Linear(in_features=9216, out_features=4096, bias=True)
+  (fc7): Linear(in_features=4096, out_features=4096, bias=True)
+  (fc8): Linear(in_features=4096, out_features=1000, bias=True)
+)
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 55, 55]          23,296
+            Conv2d-2          [-1, 192, 27, 27]         307,392
+            Conv2d-3          [-1, 384, 13, 13]         663,936
+            Conv2d-4          [-1, 256, 13, 13]         884,992
+            Conv2d-5          [-1, 256, 13, 13]         590,080
+            Linear-6                 [-1, 4096]      37,752,832
+            Linear-7                 [-1, 4096]      16,781,312
+            Linear-8                 [-1, 1000]       4,097,000
+================================================================
+Total params: 61,100,840
+Trainable params: 61,100,840
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 3.77
+Params size (MB): 233.08
+Estimated Total Size (MB): 237.43
+----------------------------------------------------------------
+odict_keys(['conv1.weight', 'conv1.bias', 'conv2.weight', 'conv2.bias', 'conv3.weight', 'conv3.bias', 'conv4.weight', 'conv4.bias', 'conv5.weight', 'conv5.bias', 'fc6.weight', 'fc6.bias', 'fc7.weight', 'fc7.bias', 'fc8.weight', 'fc8.bias'])
+Epoch: 1 [12800/100000] loss: 6.692142066955566
+Epoch: 1 [25600/100000] loss: 5.516973404884339
+Epoch: 1 [38400/100000] loss: 5.430994515419006
+Epoch: 1 [51200/100000] loss: 5.405162014961243
+Epoch: 1 [64000/100000] loss: 5.390682935714722
+Epoch: 1 [76800/100000] loss: 5.3882829236984255
+Epoch: 1 [89600/100000] loss: 5.37259774684906
+Epoch: 1 Accuracy: 0.5499999999999999
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_1.pth
+Epoch: 2 [12800/100000] loss: 5.369223680496216
+Epoch: 2 [25600/100000] loss: 5.365167665481567
+Epoch: 2 [38400/100000] loss: 5.356261839866638
+Epoch: 2 [51200/100000] loss: 5.282462897300721
+Epoch: 2 [64000/100000] loss: 5.198662104606629
+Epoch: 2 [76800/100000] loss: 5.162211527824402
+Epoch: 2 [89600/100000] loss: 5.1359316349029545
+Epoch: 2 Accuracy: 1.82
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_2.pth
+Epoch: 3 [12800/100000] loss: 5.106755247116089
+Epoch: 3 [25600/100000] loss: 5.078084654808045
+Epoch: 3 [38400/100000] loss: 5.07431173324585
+Epoch: 3 [51200/100000] loss: 5.032752757072449
+Epoch: 3 [64000/100000] loss: 4.99006404876709
+Epoch: 3 [76800/100000] loss: 4.9353945398330685
+Epoch: 3 [89600/100000] loss: 4.862198348045349
+Epoch: 3 Accuracy: 4.58
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_3.pth
+Epoch: 4 [12800/100000] loss: 4.794879808425903
+Epoch: 4 [25600/100000] loss: 4.76830714225769
+Epoch: 4 [38400/100000] loss: 4.70060161113739
+Epoch: 4 [51200/100000] loss: 4.661634383201599
+Epoch: 4 [64000/100000] loss: 4.635243244171143
+Epoch: 4 [76800/100000] loss: 4.574375190734863
+Epoch: 4 [89600/100000] loss: 4.57583288192749
+Epoch: 4 Accuracy: 7.969999999999999
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_4.pth
+Epoch: 5 [12800/100000] loss: 4.510862736701966
+Epoch: 5 [25600/100000] loss: 4.454179782867431
+Epoch: 5 [38400/100000] loss: 4.4515512609481815
+Epoch: 5 [51200/100000] loss: 4.400377545356751
+Epoch: 5 [64000/100000] loss: 4.40512663602829
+Epoch: 5 [76800/100000] loss: 4.367519340515137
+Epoch: 5 [89600/100000] loss: 4.328244376182556
+Epoch: 5 Accuracy: 10.97
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_5.pth
+Epoch: 6 [12800/100000] loss: 4.2683399033546445
+Epoch: 6 [25600/100000] loss: 4.252114570140838
+Epoch: 6 [38400/100000] loss: 4.2758377122879025
+Epoch: 6 [51200/100000] loss: 4.250610411167145
+Epoch: 6 [64000/100000] loss: 4.19695520401001
+Epoch: 6 [76800/100000] loss: 4.158384065628052
+Epoch: 6 [89600/100000] loss: 4.162416615486145
+Epoch: 6 Accuracy: 12.76
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_6.pth
+Epoch: 7 [12800/100000] loss: 4.105972559452057
+Epoch: 7 [25600/100000] loss: 4.060055718421936
+Epoch: 7 [38400/100000] loss: 4.097145266532898
+Epoch: 7 [51200/100000] loss: 4.073836295604706
+Epoch: 7 [64000/100000] loss: 4.060594027042389
+Epoch: 7 [76800/100000] loss: 3.978382432460785
+Epoch: 7 [89600/100000] loss: 3.9926660084724426
+Epoch: 7 Accuracy: 17.64
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_7.pth
+Epoch: 8 [12800/100000] loss: 3.919400415420532
+Epoch: 8 [25600/100000] loss: 3.947589716911316
+Epoch: 8 [38400/100000] loss: 3.8892063665390015
+Epoch: 8 [51200/100000] loss: 3.8925700545310975
+Epoch: 8 [64000/100000] loss: 3.8458811473846435
+Epoch: 8 [76800/100000] loss: 3.891410222053528
+Epoch: 8 [89600/100000] loss: 3.873243339061737
+Epoch: 8 Accuracy: 20.349999999999998
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_8.pth
+Epoch: 9 [12800/100000] loss: 3.7830516695976257
+Epoch: 9 [25600/100000] loss: 3.7932292771339418
+Epoch: 9 [38400/100000] loss: 3.803807032108307
+Epoch: 9 [51200/100000] loss: 3.7486328125
+Epoch: 9 [64000/100000] loss: 3.7738467121124266
+Epoch: 9 [76800/100000] loss: 3.766286964416504
+Epoch: 9 [89600/100000] loss: 3.736832971572876
+Epoch: 9 Accuracy: 21.87
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_9.pth
+Epoch: 10 [12800/100000] loss: 3.678027341365814
+Epoch: 10 [25600/100000] loss: 3.663874189853668
+Epoch: 10 [38400/100000] loss: 3.672708077430725
+Epoch: 10 [51200/100000] loss: 3.648489475250244
+Epoch: 10 [64000/100000] loss: 3.6083694958686827
+Epoch: 10 [76800/100000] loss: 3.658539595603943
+Epoch: 10 [89600/100000] loss: 3.610160963535309
+Epoch: 10 Accuracy: 23.990000000000002
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_10.pth
+Epoch: 11 [12800/100000] loss: 3.5922055888175963
+Epoch: 11 [25600/100000] loss: 3.5715407085418702
+Epoch: 11 [38400/100000] loss: 3.5756447219848635
+Epoch: 11 [51200/100000] loss: 3.575273027420044
+Epoch: 11 [64000/100000] loss: 3.562716212272644
+Epoch: 11 [76800/100000] loss: 3.5314502191543578
+Epoch: 11 [89600/100000] loss: 3.590712547302246
+Epoch: 11 Accuracy: 24.89
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_11.pth
+Epoch: 12 [12800/100000] loss: 3.5190111875534056
+Epoch: 12 [25600/100000] loss: 3.4730441856384275
+Epoch: 12 [38400/100000] loss: 3.4887504982948303
+Epoch: 12 [51200/100000] loss: 3.4813915514945983
+Epoch: 12 [64000/100000] loss: 3.444762749671936
+Epoch: 12 [76800/100000] loss: 3.472687180042267
+Epoch: 12 [89600/100000] loss: 3.4638921213150025
+Epoch: 12 Accuracy: 28.110000000000003
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_12.pth
+Epoch: 13 [12800/100000] loss: 3.40530202627182
+Epoch: 13 [25600/100000] loss: 3.3948947310447695
+Epoch: 13 [38400/100000] loss: 3.436973519325256
+Epoch: 13 [51200/100000] loss: 3.412523009777069
+Epoch: 13 [64000/100000] loss: 3.4134127163887023
+Epoch: 13 [76800/100000] loss: 3.380310368537903
+Epoch: 13 [89600/100000] loss: 3.426216866970062
+Epoch: 13 Accuracy: 28.62
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_13.pth
+Epoch: 14 [12800/100000] loss: 3.3352541875839234
+Epoch: 14 [25600/100000] loss: 3.371020107269287
+Epoch: 14 [38400/100000] loss: 3.3356482696533205
+Epoch: 14 [51200/100000] loss: 3.370486922264099
+Epoch: 14 [64000/100000] loss: 3.342988758087158
+Epoch: 14 [76800/100000] loss: 3.3333623719215395
+Epoch: 14 [89600/100000] loss: 3.3521717309951784
+Epoch: 14 Accuracy: 29.62
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_14.pth
+Epoch: 15 [12800/100000] loss: 3.273395619392395
+Epoch: 15 [25600/100000] loss: 3.297477536201477
+Epoch: 15 [38400/100000] loss: 3.300461709499359
+Epoch: 15 [51200/100000] loss: 3.298571105003357
+Epoch: 15 [64000/100000] loss: 3.2671537947654725
+Epoch: 15 [76800/100000] loss: 3.2683226799964906
+Epoch: 15 [89600/100000] loss: 3.2993059086799623
+Epoch: 15 Accuracy: 30.9
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_15.pth
+Epoch: 16 [12800/100000] loss: 3.2435005474090577
+Epoch: 16 [25600/100000] loss: 3.257617073059082
+Epoch: 16 [38400/100000] loss: 3.244678692817688
+Epoch: 16 [51200/100000] loss: 3.210885856151581
+Epoch: 16 [64000/100000] loss: 3.2359595918655395
+Epoch: 16 [76800/100000] loss: 3.209597713947296
+Epoch: 16 [89600/100000] loss: 3.2619805669784547
+Epoch: 16 Accuracy: 31.55
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_16.pth
+Epoch: 17 [12800/100000] loss: 3.199807231426239
+Epoch: 17 [25600/100000] loss: 3.149989354610443
+Epoch: 17 [38400/100000] loss: 3.1607207608222962
+Epoch: 17 [51200/100000] loss: 3.1717752814292908
+Epoch: 17 [64000/100000] loss: 3.1788389825820924
+Epoch: 17 [76800/100000] loss: 3.2090899896621705
+Epoch: 17 [89600/100000] loss: 3.1930962562561036
+Epoch: 17 Accuracy: 32.49
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_17.pth
+Epoch: 18 [12800/100000] loss: 3.1261766958236694
+Epoch: 18 [25600/100000] loss: 3.1253410720825197
+Epoch: 18 [38400/100000] loss: 3.140746490955353
+Epoch: 18 [51200/100000] loss: 3.1655020713806152
+Epoch: 18 [64000/100000] loss: 3.14797726392746
+Epoch: 18 [76800/100000] loss: 3.130220055580139
+Epoch: 18 [89600/100000] loss: 3.127344317436218
+Epoch: 18 Accuracy: 33.39
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_18.pth
+Epoch: 19 [12800/100000] loss: 3.079371967315674
+Epoch: 19 [25600/100000] loss: 3.0753012919425964
+Epoch: 19 [38400/100000] loss: 3.139739923477173
+Epoch: 19 [51200/100000] loss: 3.083416850566864
+Epoch: 19 [64000/100000] loss: 3.08000910282135
+Epoch: 19 [76800/100000] loss: 3.1136135125160216
+Epoch: 19 [89600/100000] loss: 3.098669288158417
+Epoch: 19 Accuracy: 34.36
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_19.pth
+Epoch: 20 [12800/100000] loss: 3.0377523851394654
+Epoch: 20 [25600/100000] loss: 3.0201432871818543
+Epoch: 20 [38400/100000] loss: 3.0295705890655515
+Epoch: 20 [51200/100000] loss: 3.029774899482727
+Epoch: 20 [64000/100000] loss: 3.0815144872665403
+Epoch: 20 [76800/100000] loss: 3.056287021636963
+Epoch: 20 [89600/100000] loss: 3.0473836636543274
+Epoch: 20 Accuracy: 33.37
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_20.pth
+Epoch: 21 [12800/100000] loss: 2.9192624521255492
+Epoch: 21 [25600/100000] loss: 2.824646575450897
+Epoch: 21 [38400/100000] loss: 2.7798534631729126
+Epoch: 21 [51200/100000] loss: 2.82598566532135
+Epoch: 21 [64000/100000] loss: 2.781998827457428
+Epoch: 21 [76800/100000] loss: 2.757775070667267
+Epoch: 21 [89600/100000] loss: 2.773164458274841
+Epoch: 21 Accuracy: 38.95
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_21.pth
+Epoch: 22 [12800/100000] loss: 2.7250304770469667
+Epoch: 22 [25600/100000] loss: 2.7390470004081724
+Epoch: 22 [38400/100000] loss: 2.697985031604767
+Epoch: 22 [51200/100000] loss: 2.71391056060791
+Epoch: 22 [64000/100000] loss: 2.732048134803772
+Epoch: 22 [76800/100000] loss: 2.729902648925781
+Epoch: 22 [89600/100000] loss: 2.6939309358596804
+Epoch: 22 Accuracy: 39.89
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_22.pth
+Epoch: 23 [12800/100000] loss: 2.7132343459129333
+Epoch: 23 [25600/100000] loss: 2.6728973388671875
+Epoch: 23 [38400/100000] loss: 2.69948322057724
+Epoch: 23 [51200/100000] loss: 2.682021691799164
+Epoch: 23 [64000/100000] loss: 2.672988259792328
+Epoch: 23 [76800/100000] loss: 2.6795618724823
+Epoch: 23 [89600/100000] loss: 2.694450948238373
+Epoch: 23 Accuracy: 39.76
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_23.pth
+Epoch: 24 [12800/100000] loss: 2.6380352115631105
+Epoch: 24 [25600/100000] loss: 2.6451510047912596
+Epoch: 24 [38400/100000] loss: 2.6439366006851195
+Epoch: 24 [51200/100000] loss: 2.6895770454406738
+Epoch: 24 [64000/100000] loss: 2.6553465151786804
+Epoch: 24 [76800/100000] loss: 2.6972342586517333
+Epoch: 24 [89600/100000] loss: 2.6448500633239744
+Epoch: 24 Accuracy: 40.400000000000006
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_24.pth
+Epoch: 25 [12800/100000] loss: 2.6460674476623534
+Epoch: 25 [25600/100000] loss: 2.6493639087677003
+Epoch: 25 [38400/100000] loss: 2.658642387390137
+Epoch: 25 [51200/100000] loss: 2.646886479854584
+Epoch: 25 [64000/100000] loss: 2.650744466781616
+Epoch: 25 [76800/100000] loss: 2.6158347225189207
+Epoch: 25 [89600/100000] loss: 2.5943729758262633
+Epoch: 25 Accuracy: 40.37
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_25.pth
+Epoch: 26 [12800/100000] loss: 2.6208870077133177
+Epoch: 26 [25600/100000] loss: 2.605514781475067
+Epoch: 26 [38400/100000] loss: 2.66106299161911
+Epoch: 26 [51200/100000] loss: 2.656861684322357
+Epoch: 26 [64000/100000] loss: 2.6121997356414797
+Epoch: 26 [76800/100000] loss: 2.6373860573768617
+Epoch: 26 [89600/100000] loss: 2.6338996195793154
+Epoch: 26 Accuracy: 40.81
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_26.pth
+Epoch: 27 [12800/100000] loss: 2.5897679781913756
+Epoch: 27 [25600/100000] loss: 2.5982714343070983
+Epoch: 27 [38400/100000] loss: 2.605989546775818
+Epoch: 27 [51200/100000] loss: 2.608739984035492
+Epoch: 27 [64000/100000] loss: 2.619173333644867
+Epoch: 27 [76800/100000] loss: 2.6348499298095702
+Epoch: 27 [89600/100000] loss: 2.6443411803245542
+Epoch: 27 Accuracy: 40.72
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_27.pth
+Epoch: 28 [12800/100000] loss: 2.603174750804901
+Epoch: 28 [25600/100000] loss: 2.587897933721542
+Epoch: 28 [38400/100000] loss: 2.5880037784576415
+Epoch: 28 [51200/100000] loss: 2.6001188349723816
+Epoch: 28 [64000/100000] loss: 2.6247039103507994
+Epoch: 28 [76800/100000] loss: 2.576260964870453
+Epoch: 28 [89600/100000] loss: 2.624491250514984
+Epoch: 28 Accuracy: 40.489999999999995
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_28.pth
+Epoch: 29 [12800/100000] loss: 2.583631775379181
+Epoch: 29 [25600/100000] loss: 2.5729928493499754
+Epoch: 29 [38400/100000] loss: 2.593929445743561
+Epoch: 29 [51200/100000] loss: 2.573680512905121
+Epoch: 29 [64000/100000] loss: 2.5771782779693604
+Epoch: 29 [76800/100000] loss: 2.5906007170677183
+Epoch: 29 [89600/100000] loss: 2.5822721123695374
+Epoch: 29 Accuracy: 41.25
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_29.pth
+Epoch: 30 [12800/100000] loss: 2.5732810211181643
+Epoch: 30 [25600/100000] loss: 2.5706816005706785
+Epoch: 30 [38400/100000] loss: 2.5675565099716184
+Epoch: 30 [51200/100000] loss: 2.5380082631111147
+Epoch: 30 [64000/100000] loss: 2.5763994240760804
+Epoch: 30 [76800/100000] loss: 2.585867762565613
+Epoch: 30 [89600/100000] loss: 2.575064091682434
+Epoch: 30 Accuracy: 41.27
+saving checkpoint in /homework/lv/time_performance_optimization_for_CNN/log/log_prune/model_30.pth
+Sparsity in conv1.weight: 3.53%
+Sparsity in conv2.weight: 7.96%
+Sparsity in conv3.weight: 8.35%
+Sparsity in conv4.weight: 11.09%
+Sparsity in conv5.weight: 9.60%
+Sparsity in fc6.weight: 23.19%
+Sparsity in fc7.weight: 15.64%
+Sparsity in fc8.weight: 14.78%
+Global sparsity: 20.00%
+AlexNet(
+  (conv1): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+  (conv2): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+  (conv3): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (fc6): Linear(in_features=9216, out_features=4096, bias=True)
+  (fc7): Linear(in_features=4096, out_features=4096, bias=True)
+  (fc8): Linear(in_features=4096, out_features=1000, bias=True)
+)
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 55, 55]          23,296
+            Conv2d-2          [-1, 192, 27, 27]         307,392
+            Conv2d-3          [-1, 384, 13, 13]         663,936
+            Conv2d-4          [-1, 256, 13, 13]         884,992
+            Conv2d-5          [-1, 256, 13, 13]         590,080
+            Linear-6                 [-1, 4096]      37,752,832
+            Linear-7                 [-1, 4096]      16,781,312
+            Linear-8                 [-1, 1000]       4,097,000
+================================================================
+Total params: 61,100,840
+Trainable params: 61,100,840
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.57
+Forward/backward pass size (MB): 3.77
+Params size (MB): 233.08
+Estimated Total Size (MB): 237.43
+----------------------------------------------------------------
+odict_keys(['conv1.bias', 'conv1.weight_orig', 'conv1.weight_mask', 'conv2.bias', 'conv2.weight_orig', 'conv2.weight_mask', 'conv3.bias', 'conv3.weight_orig', 'conv3.weight_mask', 'conv4.bias', 'conv4.weight_orig', 'conv4.weight_mask', 'conv5.bias', 'conv5.weight_orig', 'conv5.weight_mask', 'fc6.bias', 'fc6.weight_orig', 'fc6.weight_mask', 'fc7.bias', 'fc7.weight_orig', 'fc7.weight_mask', 'fc8.bias', 'fc8.weight_orig', 'fc8.weight_mask'])
+Epoch: 31 Accuracy: 40.949999999999996
+
+进程已结束，退出代码为 0

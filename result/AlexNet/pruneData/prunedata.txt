@@ -1,0 +1,10 @@
+Network: /homework/lv/time_performance_optimization_for_CNN/net/all_json/alex.json
+Direction: forward
+conv1	[128, 54, 54, 64]  Filters: [11, 11, 3, 64]  Pad: VALID (0, 0) Stride: 4, 4 Params: 23,296 Input: [128, 224, 224, 3] input_nonzero:  1.0 filter_nonzero:  0.9647
+conv2	[128, 26, 26, 192]  Filters: [5, 5, 64, 192]  Pad: SAME (2, 2) Stride: 1, 1 Params: 307,392 Input: [128, 26, 26, 64] input_nonzero:  1.0 filter_nonzero:  0.9204
+conv3	[128, 12, 12, 384]  Filters: [3, 3, 192, 384]  Pad: SAME (1, 1) Stride: 1, 1 Params: 663,936 Input: [128, 12, 12, 192] input_nonzero:  1.0 filter_nonzero:  0.9165
+conv4	[128, 12, 12, 384]  Filters: [3, 3, 384, 384]  Pad: SAME (1, 1) Stride: 1, 1 Params: 1,327,488 Input: [128, 12, 12, 384] input_nonzero:  1.0 filter_nonzero:  0.8891
+conv5	[128, 12, 12, 256]  Filters: [3, 3, 384, 256]  Pad: SAME (1, 1) Stride: 1, 1 Params: 884,992 Input: [128, 12, 12, 384] input_nonzero:  1.0 filter_nonzero:  0.904
+fc6	[128, 1, 1, 4096]  Filters: [5, 5, 256, 4096]  Pad: VALID (0, 0) Stride: 1, 1 Params: 26,218,496 Input: [128, 5, 5, 256] input_nonzero:  1.0 filter_nonzero:  0.7681
+fc7	[128, 1, 1, 4096]  Filters: [1, 1, 4096, 4096]  Pad: SAME (0, 0) Stride: 1, 1 Params: 16,781,312 Input: [128, 1, 1, 4096] input_nonzero:  1.0 filter_nonzero:  0.8436
+fc8	[128, 1, 1, 1000]  Filters: [1, 1, 4096, 1000]  Pad: SAME (0, 0) Stride: 1, 1 Params: 4,097,000 Input: [128, 1, 1, 4096] input_nonzero:  1.0 filter_nonzero:  0.8522
